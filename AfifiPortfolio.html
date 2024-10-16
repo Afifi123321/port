@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Afifi Bin Rehim | Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #3633ff;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+        nav {
+            margin: 1.5rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 20px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #3633ff;
+            margin-top: 0;
+            font-size: 2rem;
+        }
+        .about-img {
+            float: left;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-card h3 {
+            padding: 1rem;
+            margin: 0;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #333;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Muhammad Afifi Bin Rehim</h1>
+        <p>BSc Information Technology (Honors) | Universiti Teknologi PETRONAS</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section with Profile Photo -->
+    <section id="about" class="content clearfix">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Muhammad Afifi" class="about-img">
+        <strong>Muhammad Afifi Bin Rehim
+            Information Technology Graduate | Minor in Corporate Management</strong>
+            
+        </p>
+    <strong>Professional Summary</strong>
+    <p>I am a dedicated Information Technology graduate with a strong academic foundation from Universiti Teknologi PETRONAS. My academic journey has equipped me with hands-on experience in software development, database systems, and data analytics. Eager to stay ahead of industry trends, I am passionate about contributing to forward-thinking organizations while enhancing my skills in a professional environment.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="content">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>BSc Information Technology (Honors), Universiti Teknologi PETRONAS</strong> (2020 - Present)<br>
+                CGPA: 3.10 | Dean's List (January 2023). Among subjects taken: Structured Programming, Database Systems, Wireless Technology,
+                Network Design and Architecture, Principle of Marketing, Big Data Analytics, IT Project
+                Management, Internet of Things, Data Visualization, Machine Learning
+            </li>
+            <li>
+                <strong>Foundation in Information Technology, Universiti Teknologi PETRONAS</strong> (2019 - 2020)<br>
+                CGPA: 3.05
+            </li>
+            <li><strong>MRSM Pendang</strong> 
+                Sijil Pelajaran Malaysia</li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="content">
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Jersey Designer & Maker (Jan 2023 - May 2023)</strong><br>Created jersey designs using AI for UTP Falcon volleyball club.</li>
+            <li><strong>Intern - PETRONAS Group Tax Department (Jan 2022 - Aug 2022)</strong><br>Developed a KPI website using Microsoft Power Platform and created data visualizations with Power BI.</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section with Project Screenshots -->
+    <section id="projects" class="content">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card project1">
+                <img src="Finger.jpeg" alt="Project 1" width="100%" height="200px"> <!-- Set height to 400px -->
+                <h3>Final Year Project: Attendance Tracking with Biometric Fingerprint Recognition</h3>
+                <li>A student attendance fingerprint system is a type of biometric technology that keeps track
+                    of students' attendance at educational facilities using fingerprint recognition.</li>
+                    <li>The method would entail placing fingerprint scanners connected to a central database
+                        inside of classrooms and lecture halls</li>
+                    <li>Demonstrated strong analytical and problem-solving skills throughout the project.</li>
+            </div>
+            <div class="project-card">
+                <img src="Project2.jpg" alt="Project 2" width="100%" height="200px"> <!-- Set height to 200px -->
+                <h3>Intern Side Project: Group Tax Scorecard One Stop Centre </h3>
+                <li>Developed a new website for calculating the KPIs of the employees and the
+                    company project evaluation using Microsoft Power Platform such as Power
+                    Apps and Power Automate. </li>
+                    <li>Developed data visualization of the KPIs of Group Tax employees by using
+                        Power BI. </li>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Visual Studio, Java, C, C++, Python, MySQL, PHP, HTML</li>
+            <li><strong>Tools:</strong> Office 365, Power BI, Microsoft Power Apps, Unity, Git</li>
+            <li><strong>Technologies:</strong> Augmented Reality, Data Analytics, Machine Learning, IoT</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content">
+        <h2>Contact Me</h2>
+        <li><strong>No Phone: +60122168364 </strong></li>
+        <li><strong>Email: afifirehim@gmail.com
+        </strong></li><strong>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Muhammad Afifi Bin Rehim | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
